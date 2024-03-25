@@ -35,10 +35,11 @@
     }
 
     function buscar($numeros){
-        foreach ($numeros as $key => $valor) {
-            if ($valor == 6) {
-                echo $valor;
-            }
+        $busqueda = 6;
+        if(!empty($search)){
+            echo "El número buscado está en el array, en el índice: $search";
+        }else{
+            echo "No existe el número buscado";
         }
     }
 ?>
